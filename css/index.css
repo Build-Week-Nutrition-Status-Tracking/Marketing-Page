@@ -312,7 +312,7 @@ img {
 }
 .home .what {
   margin: 0 10% 0 10%;
-  padding-top: 3%;
+  padding: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -322,7 +322,6 @@ img {
   width: 49%;
 }
 .home .what div img {
-  padding-bottom: 5%;
   padding-left: 5%;
   border-radius: 105px;
 }
@@ -343,6 +342,19 @@ img {
     padding: 0;
     width: 100%;
     border-radius: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .home .what {
+    flex-direction: column;
+    margin: 0 5% 0 5%;
+  }
+  .home .what div {
+    width: 100%;
+  }
+  .home .what div img {
+    border-radius: 10px;
+    padding: 0;
   }
 }
 .home .about {
@@ -380,8 +392,14 @@ img {
   }
   .home .about div img {
     padding: 0;
+    margin-bottom: 6%;
     width: 100%;
     border-radius: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .home .about {
+    padding: 0 7% 0 7%;
   }
 }
 .home address {
