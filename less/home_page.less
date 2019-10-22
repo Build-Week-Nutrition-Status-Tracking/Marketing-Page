@@ -12,6 +12,7 @@
 
         img{
             width: 25%;
+            opacity: .90
         }
 
         nav{
@@ -24,13 +25,13 @@
         a{
             text-decoration: none;
             color: white;
-            padding: 2%;
+            padding: 1.5% 0 1.5% 0;
             width: 20%;
             text-align: center;
         }
 
         a:hover{
-            background-color: #FBA220;
+            background-color: rgba(251, 162, 32, 0.85);
             color: white;
             border-radius: 5px;
             transition: all .75s ease;
@@ -43,6 +44,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         background-image: url('../img/child2.jpg');
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -50,13 +52,75 @@
         background-size: cover;
 
         h1{
-            padding: 30% 0 15% 0;
+            padding: 30% 0 3% 0;
+        }
+
+        button{
+            color: white;
+            background-color: rgba(251, 162, 32, 0.85);
+            width: 10%;
+            padding: .5% 0 .5% 0;
+            margin-bottom: 15%;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            border: 1px solid rgba(248,248,248, 0.25);
+
+            &:hover{
+                background-color: rgba(248,248,248, 0.85);
+                color: #C03169;
+                border-radius: 5px;
+                transition: all .75s ease;
+    
+            }
+        }
+    }
+
+    .what{
+        margin: 0 10% 0 10%;
+        padding-top: 3%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            width: 49%;
+            
+            img {
+                padding-bottom: 5%;
+                border-radius: 105px;
+            } 
         }
     }
 
     .about{
-        padding-top: 10px;
-        height: 300px;
+        padding: 0 10% 0 10%;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(247, 164, 26, 0.99);
+
+        div {
+            width: 49%;
+
+            img {
+                padding: 5% 0 5% 0;
+                border-radius: 105px;
+            } 
+
+            h2 {
+                color: white;
+            }
+        }
+    }
+
+    address{
+        text-align: center;
+        padding: 2%;
+        color: gray;
+        font-size: 1.25rem;
     }
 
 }

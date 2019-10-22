@@ -1,6 +1,9 @@
 .primary_font {
   font-family: "Lato", "Verdana", sans-serif;
 }
+.header_font {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,19 +137,23 @@ table {
 }
 html {
   font-size: 62.5%;
+  color: #383838;
 }
 html,
 body {
   font-family: "Lato", "Verdana", sans-serif;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 5.75rem;
   color: white;
-  font-family: "Lato", "Verdana", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-style: Bold;
+  opacity: 0.9;
 }
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+  color: #16acaf;
 }
 h4 {
   font-size: 2.5rem;
@@ -176,6 +183,7 @@ img {
 }
 .home header img {
   width: 25%;
+  opacity: 0.9;
 }
 .home header nav {
   display: flex;
@@ -186,12 +194,12 @@ img {
 .home header a {
   text-decoration: none;
   color: white;
-  padding: 2%;
+  padding: 1.5% 0 1.5% 0;
   width: 20%;
   text-align: center;
 }
 .home header a:hover {
-  background-color: #FBA220;
+  background-color: rgba(251, 162, 32, 0.85);
   color: white;
   border-radius: 5px;
   transition: all 0.75s ease;
@@ -201,6 +209,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-image: url('../img/child2.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -208,9 +217,61 @@ img {
   background-size: cover;
 }
 .home .top_container h1 {
-  padding: 30% 0 15% 0;
+  padding: 30% 0 3% 0;
+}
+.home .top_container button {
+  color: white;
+  background-color: rgba(251, 162, 32, 0.85);
+  width: 10%;
+  padding: 0.5% 0 0.5% 0;
+  margin-bottom: 15%;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid rgba(248, 248, 248, 0.25);
+}
+.home .top_container button:hover {
+  background-color: rgba(248, 248, 248, 0.85);
+  color: #C03169;
+  border-radius: 5px;
+  transition: all 0.75s ease;
+}
+.home .what {
+  margin: 0 10% 0 10%;
+  padding-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .what div {
+  width: 49%;
+}
+.home .what div img {
+  padding-bottom: 5%;
+  border-radius: 105px;
 }
 .home .about {
-  padding-top: 10px;
-  height: 300px;
+  padding: 0 10% 0 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(247, 164, 26, 0.99);
+}
+.home .about div {
+  width: 49%;
+}
+.home .about div img {
+  padding: 5% 0 5% 0;
+  border-radius: 105px;
+}
+.home .about div h2 {
+  color: white;
+}
+.home address {
+  text-align: center;
+  padding: 2%;
+  color: gray;
+  font-size: 1.25rem;
 }
