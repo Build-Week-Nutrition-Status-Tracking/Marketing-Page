@@ -1,0 +1,215 @@
+.about {
+
+    header {
+        display: flex;
+        position: fixed;
+        z-index: 69;
+        width: 100%;
+        top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5% 0 5%;
+        font-size: 1.75rem;
+        background-color: rgba(22, 172, 175, 0.75);
+
+        .nav_img{
+            width: 30%;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+        }
+
+        a{
+            text-decoration: none;
+            color: @altwhite;
+            padding: 1.5% 0 1.5% 0;
+            width: 20%;
+            text-align: center;
+        }
+
+        a:hover{
+            background-color: rgba(251, 162, 32, 0.85);
+            color: @altwhite;
+            border-radius: 5px;
+            transition: all .75s ease;
+        }
+
+        @media @tablet{
+            .nav_img {
+                width: 50%;
+            }
+            a{
+                font-size: 1.5rem;
+            }
+        }
+
+        @media @phone{
+            .nav_img {
+                width: 70%;
+            }
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .about_content {
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+
+        h1 {
+            color: rgba(22, 172, 175, 0.75);
+            width: 100%;
+            text-align: center;
+            padding-bottom: 3%;
+
+            @media @tablet {
+                padding-bottom: 5%;
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+            padding-top: 10%;
+        }
+
+        //begin team items//
+
+        figure {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 136px; height: 148px;
+            margin-right: 30px;
+            margin-top: 40px;
+            margin-bottom: 5%;
+
+            @media @tablet {
+                margin-left: 40px;
+                margin-bottom: 10%;
+            }
+
+            @media @phone {
+                margin-left: 30px;
+                margin-bottom: 15%;
+            }
+          }
+
+          .first_figure {
+              margin-left: 30px;
+          }
+          
+          /** Hexagon Mask **/
+          figure:before {
+            z-index: 3;
+            position: absolute;
+            display: block;
+            content: '';
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: url('../img/hex_mask.png') no-repeat;
+            pointer-events: none;
+            background-color: rgba(251, 162, 32, 0.15);
+          }
+          figure img {
+            display: block;
+            width: auto; height: 100%;
+          }
+          
+          /** Contact Links **/
+          figure .contact {
+            z-index: 2;
+            position: absolute;
+            display: block;
+            top: 0; left: 0; right: 0; bottom: 0;
+            overflow: hidden;
+          }
+          .contact a {
+            background-image: url('../img/icons.png');
+          }
+          figure .contact a {
+            position: absolute;
+            display: block;
+            width: 50%; height: 50%;
+            background-repeat: no-repeat;
+            transition: all .25s ease-in-out;
+          }
+            figure .contact .gh {
+              top: 0; left: 0;
+              background-color: rgba(105, 105, 105, .7);
+              background-position: 30px 32px;
+              transform: translate(-100%, -100%);
+            }
+              figure .contact .gh:hover {
+                background-color: rgba(105, 105, 105, 1);
+              }
+            figure .contact .tw {
+              top: 0; right: 0;
+              background-color: rgba(251, 162, 32, 0.7);
+              background-position: -42px 32px;
+              transform: translate(100%, -100%);
+            }
+              figure .contact .tw:hover {
+                background-color: rgba(251, 162, 32, 1);
+              }
+            figure .contact .gp {
+              bottom: 0; left: 0;
+              background-color: rgba(22, 172, 175, 0.7);
+              background-position: 30px -40px;
+              transform: translate(-100%, 100%);
+            }
+              figure .contact .gp:hover {
+                background-color: rgba(22, 172, 175, 1);
+              }
+            figure .contact .li {
+              bottom: 0; right: 0;
+              background-color: rgba(2, 116, 179, .7);
+              background-position: -42px -40px;
+              transform: translate(100%, 100%);
+            }
+              figure .contact .li:hover {
+                background-color: rgba(2, 116, 179, 1);
+              }
+              figure:hover .contact a {
+                transform: translate(0, 0);
+              }
+
+        //team items end//
+
+        @media @tablet {
+            margin-top: 30%;
+        }
+
+        @media @phone {
+            margin-top: 30%;
+        }
+    }
+
+    address{
+        text-align: center;
+        padding: 2%;
+        margin-top: 17%;
+        color: gray;
+        font-size: 1.25rem;
+        background-color: rgba(247, 164, 26, 0.99); 
+
+
+        @media @tablet {
+            margin-top: 10%;
+        }
+
+        @media @phone {
+            margin-top: 10%;
+        }
+    }
+    
+}
