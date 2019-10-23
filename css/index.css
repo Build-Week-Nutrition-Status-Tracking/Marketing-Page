@@ -566,6 +566,7 @@ img {
   color: rgba(22, 172, 175, 0.75);
   width: 100%;
   text-align: center;
+  padding-bottom: 3%;
 }
 @media (max-width: 800px) {
   .about .about_content h1 {
@@ -573,7 +574,7 @@ img {
   }
 }
 .about .about_content h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding-top: 10%;
 }
 .about .about_content figure {
