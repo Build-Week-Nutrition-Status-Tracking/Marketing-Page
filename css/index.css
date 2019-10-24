@@ -224,11 +224,14 @@ img {
   }
 }
 @media (max-width: 500px) {
+  .home header nav {
+    width: 100%;
+  }
   .home header .nav_img {
-    width: 80%;
+    width: 100%;
   }
   .home header a {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 .home .top_container {
@@ -237,8 +240,8 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   background-image: url('../img/child2.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -271,6 +274,9 @@ img {
   }
 }
 @media (max-width: 500px) {
+  .home .top_container {
+    background-position: center;
+  }
   .home .top_container h1 {
     font-size: 4rem;
   }
